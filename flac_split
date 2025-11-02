@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MUSIC_LIBRARY="$1"
+MUSIC_LIBRARY="/home/usuario/Música/Metal/$1"
 
 find "$MUSIC_LIBRARY" -type f -name '*.cue' -print0 | while read -d $'\0' cuefile; do
     dir="$(dirname "$cuefile")"

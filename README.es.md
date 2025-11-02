@@ -32,4 +32,4 @@ flac_split <directorio>
 
 Reemplaza ```<directorio>``` por un directorio de tu biblioteca musical
 
-Eso es todo amigos!!
+¡Eso es todo amigos!

@@ -11,7 +11,7 @@ sudo apt install cuetools shntool flac
 
 Clonar repositorio
 ```bash
-git clone https://github.com/andres885/flac-splitter.git
+git clone https://github.com/andres885/flac_split.git
 ```
 
 Mover script a un directorio en el PATH

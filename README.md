@@ -21,5 +21,5 @@ mv flac-splitter/flac_split ~/.local/bin/
 
 Ejecutar script
 ```bash
-split_flac <directorio>
+flac_split <directorio>
 ```

@@ -16,10 +16,10 @@ git clone https://github.com/andres885/flac-splitter.git
 
 Mover script a un directorio en el PATH
 ```bash
-mv flac-splitter/flac_split.sh ~/.local/bin/
+mv flac-splitter/flac_split ~/.local/bin/
 ```
 
 Ejecutar script
 ```bash
-split_flac.sh <directorio>
+split_flac <directorio>
 ```

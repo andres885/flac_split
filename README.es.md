@@ -18,7 +18,7 @@ git clone https://github.com/andres885/flac_split.git
 ```
 Sustituir la ruta a tu biblioteca musical en el script:
 
-Cambia ```bash MUSIC_LIBRARY="/home/usuario/Música/Metal/$1"``` por MUSIC_LIBRARY="/ruta/a/tu/biblioteca/$1"```
+Cambia ```MUSIC_LIBRARY="/home/usuario/Música/Metal/$1"``` por MUSIC_LIBRARY="/ruta/a/tu/biblioteca/$1"```
 
 Mover script a un directorio en el PATH:
 ```bash
@@ -30,6 +30,6 @@ Ejecutar script:
 flac_split <directorio>
 ```
 
-Reemplaza ```bash <directorio>``` por un directorio de tu biblioteca musical
+Reemplaza ```<directorio>``` por un directorio de tu biblioteca musical
 
 Eso es todo amigos!!

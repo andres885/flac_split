@@ -14,6 +14,9 @@ Clone repository:
 ```bash
 git clone https://github.com/andres885/flac_split.git
 ```
+Replace the path to your music library in the script:
+
+Change ```MUSIC_LIBRARY="/home/usuario/Música/Metal/$1"``` to ```MUSIC_LIBRARY="/path/to/your/library/$1"```
 
 Move script to a directory in your PATH:
 ```bash
@@ -24,5 +27,8 @@ Run script:
 ```bash
 flac_split <directory>
 ```
+Replace <directory> with a directory from your music library.
 
 ![Captura del script](./screenshot.png)
+
+That's all, folks!

@@ -1,25 +1,27 @@
 # Bash Script to split FLAC files
 
-Un script en Bash que divide archivos FLAC en pistas independientes utilizando una hoja CUE.
+A Bash script that splits FLAC files into individual tracks using a CUE sheet.
 
-Algunas hojas pueden estar mal formadas produciendo errores en la ejecución del script. Estas hojas pueden corregirse fácilmente con un editor de texto plano. El script muestra en pantalla todo el proceso, así sabremos si ha fallado algún archivo.
+Some CUE sheets may be malformed, causing errors during script execution. These sheets can be easily fixed with a plain text editor. The script displays the entire process on screen, so you’ll know if any file failed.
 
-Instalar dependencias:
+Install dependencies:
 ```bash
 sudo apt install cuetools shntool flac
 ```
 
-Clonar repositorio:
+Clone repository:
 ```bash
 git clone https://github.com/andres885/flac_split.git
 ```
 
-Mover script a un directorio en el PATH:
+Move script to a directory in your PATH:
 ```bash
 mv flac-splitter/flac_split ~/.local/bin/
 ```
 
-Ejecutar script:
+Run script:
 ```bash
-flac_split <directorio>
+flac_split <directory>
 ```
+
+[Versión en español](./README.es.md)

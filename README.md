@@ -1,5 +1,5 @@
 [Versión en español](./README.es.md)  
-# Bash scripts to manage FLAC albums
+# FLAC splitter and tagger Bash scripts
 
 A set of Bash scripts to split FLAC files into individual tracks using a CUE sheet and optionally remove the original files once the split tracks are detected.
 

@@ -1,23 +1,36 @@
-[English version](./README.md)
-# Bash script para dividir archivos FLAC
+[English version](./README.md)  
+# Scripts Bash para dividir y etiquetar archivos FLAC
 
-Un script en Bash que divide archivos FLAC en pistas independientes utilizando una hoja CUE.
+Un conjunto de scripts Bash para dividir archivos FLAC en pistas individuales usando una hoja CUE y, opcionalmente, eliminar los archivos originales una vez detectadas las pistas divididas.
 
-Algunas hojas pueden estar mal formadas produciendo errores en la ejecución del script. Estas hojas pueden corregirse fácilmente con un editor de texto plano. El script muestra en pantalla todo el proceso, así sabremos si ha fallado algún archivo.
+## Scripts incluidos
 
-El script también colocará los nombres apropiados en cada pista además de etiquetarlas correctamente haciedo uso de los datos en la hoja CUE.
+### **flac_split**
+Divide un archivo FLAC único en pistas individuales utilizando una hoja CUE.
 
-Instalar dependencias:
+Algunas hojas CUE pueden estar mal formadas, lo que puede causar errores durante la ejecución del script. Estas hojas pueden corregirse fácilmente con un editor de texto plano.  
+El script muestra todo el proceso en pantalla, por lo que sabrás si algún archivo ha fallado.
+
+### **rmflac**
+Comprueba si un directorio contiene pistas ya divididas (según la hoja CUE).  
+Si encuentra las pistas, pregunta al usuario si desea eliminar el archivo FLAC original.
+
+---
+
+## Instalar dependencias
 ```bash
 sudo apt install cuetools shntool flac
 ```
 
-Descarga el script:
+## Descargar los scripts
 ```bash
 wget https://github.com/andres885/flac_split/raw/main/flac_split
-chmod +x flac_split
+wget https://github.com/andres885/flac_split/raw/main/rmflac
+chmod +x flac_split rmflac
 ```
-Sustituir la ruta a tu biblioteca musical en el script:
+
+## Configurar la ruta de tu biblioteca musical
+Edita ambos scripts y reemplaza la ruta de tu biblioteca musical:
 
 Cambia
 ```bash
@@ -28,18 +41,24 @@ por
 MUSIC_LIBRARY="/ruta/a/tu/biblioteca/$1"
 ```
 
-Mover script a un directorio en el PATH:
+## Mover los scripts a un directorio en tu PATH
 ```bash
-mv flac_split/flac_split ~/.local/bin/
+mv flac_split rmflac ~/.local/bin/
 ```
 
-Ejecutar script:
+## Ejecutar los scripts
+Dividir archivos FLAC:
 ```bash
 flac_split <directorio>
 ```
 
-Reemplaza ```<directorio>``` por un directorio de tu biblioteca musical
+Eliminar los originales (si las pistas ya están divididas):
+```bash
+rmflac <directorio>
+```
+
+Sustituye `<directorio>` por un directorio de tu biblioteca musical.
 
 ![Captura del script](./screenshot.png)
 
-¡Eso es todo amigos!
+¡Eso es todo, amigos!

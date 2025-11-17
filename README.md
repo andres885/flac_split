@@ -60,4 +60,10 @@ Replace `<directory>` with a directory from your music library.
 
 ![Script screenshot](./screenshot.png)
 
-That's all, folks!
+---
+
+## License
+MIT License – see the full license here:  
+https://opensource.org/licenses/MIT
+
+

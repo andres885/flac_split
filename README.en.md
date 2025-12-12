@@ -1,31 +1,31 @@
-[ 🇬🇧 English Version ](README.en.md)
+[ 🇪🇸 Versión en Español ](README.md)
 
-# Scripts Bash para Dividir y Etiquetar FLAC
+# FLAC Splitter and Tagger Bash Scripts
 
-Un conjunto de **scripts en Bash** para dividir archivos **FLAC** en pistas individuales utilizando una hoja **CUE** y, opcionalmente, eliminar los archivos originales una vez que se detectan las pistas divididas.
+A set of **Bash scripts** to split **FLAC files** into individual tracks using a **CUE sheet** and optionally remove the original files once the split tracks are detected.
 
-![Captura del script](./screenshot.png)
-
----
-
-## 🚀 Características
-
-- **flac_split**: Divide un único archivo FLAC en pistas individuales utilizando su hoja CUE correspondiente.
-  - Las hojas CUE mal formadas pueden causar errores, pero son fáciles de corregir con un editor de texto plano.
-  - El script muestra todo el proceso en pantalla para que puedas monitorear si algún archivo falla.
-
-- **rmflac**: Comprueba si un directorio contiene pistas ya divididas (basándose en la hoja CUE).
-  - Solicita confirmación al usuario para eliminar el archivo FLAC original (el archivo imagen completo) si se encuentran las pistas divididas.
+![Script screenshot](./screenshot.png)
 
 ---
 
-## 🧩 Requisitos
+## 🚀 Features
+
+- **flac_split**: Splits a single FLAC file into individual tracks using a CUE sheet.
+  - Malformed CUE sheets can cause errors, but they can be easily fixed with a plain text editor.
+  - The script displays the entire process on screen so you can monitor if any file failed.
+
+- **rmflac**: Checks if a directory contains already-split tracks (based on the CUE sheet).
+  - Prompts the user to confirm whether to delete the original FLAC file if split tracks are found.
+
+---
+
+## 🧩 Requirements
 
 - `cuetools`
 - `shntool`
 - `flac`
 
-Instalación en Debian/Ubuntu:
+Install with:
 
 ```bash
 sudo apt install cuetools shntool flac
@@ -33,9 +33,9 @@ sudo apt install cuetools shntool flac
 
 ---
 
-## 🧰 Instalación y Configuración
+## 🧰 Setup
 
-### 1. Descargar los scripts
+### 1. Download the scripts
 
 ```bash
 wget [https://github.com/andres885/flac_split/raw/main/flac_split](https://github.com/andres885/flac_split/raw/main/flac_split)
@@ -43,19 +43,19 @@ wget [https://github.com/andres885/flac_split/raw/main/rmflac](https://github.co
 chmod +x flac_split rmflac
 ```
 
-### 2. Configurar la ruta de tu biblioteca musical
+### 2. Configure your music library path
 
-Edita ambos scripts y reemplaza la ruta hacia tu biblioteca de música:
+Edit both scripts and replace the path to your music library:
 
 ```bash
-# Cambia esto
+# Change this
 MUSIC_LIBRARY="/home/usuario/Música/Metal/$1"
 
-# A tu ruta real
-MUSIC_LIBRARY="/ruta/a/tu/biblioteca/$1"
+# To your path
+MUSIC_LIBRARY="/path/to/your/library/$1"
 ```
 
-### 3. Mover los scripts a un directorio en tu PATH
+### 3. Move scripts to a directory in your PATH
 
 ```bash
 mv flac_split rmflac ~/.local/bin/
@@ -63,32 +63,32 @@ mv flac_split rmflac ~/.local/bin/
 
 ---
 
-## 🧰 Uso
+## 🧰 Usage
 
-- **Dividir FLACs**:
-
-```bash
-flac_split <directorio>
-```
-
-- **Eliminar archivos originales** (si las pistas ya están divididas):
+- **Split FLACs**:
 
 ```bash
-rmflac <directorio>
+flac_split <directory>
 ```
 
-Reemplaza `<directorio>` con el nombre del directorio dentro de tu biblioteca musical.
+- **Remove original files** (if tracks are already split):
+
+```bash
+rmflac <directory>
+```
+
+Replace `<directory>` with a directory from your music library.
 
 ---
 
-## 🧾 Licencia
+## 🧾 License
 
-Este proyecto está licenciado bajo la **Licencia MIT**.
-Consulta la licencia completa aquí: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+This project is licensed under the **MIT License**.
+See the full license here: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 ---
 
-## 🧑‍💻 Autor
+## 🧑‍💻 Author
 
-Desarrollado por [**X Software**](https://xsoftware.es)
-Desarrollo de software Linux, soluciones web y automatización de sistemas.
+Developed by [**X Software**](https://xsoftware.es)
+Linux software development, web solutions, and system automation.

@@ -83,12 +83,12 @@ Reemplaza `<directorio>` con el nombre del directorio dentro de tu biblioteca mu
 
 ## 🧾 Licencia
 
-Este proyecto está licenciado bajo la **Licencia MIT**.
+Este proyecto está licenciado bajo la **Licencia MIT**.  
 Consulta la licencia completa aquí: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 ---
 
 ## 🧑‍💻 Autor
 
-Desarrollado por [**X Software**](https://xsoftware.es)
+Desarrollado por [**X Software**](https://xsoftware.es).  
 Desarrollo de software Linux, soluciones web y automatización de sistemas.

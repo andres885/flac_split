@@ -83,12 +83,12 @@ Replace `<directory>` with a directory from your music library.
 
 ## 🧾 License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **MIT License**.  
 See the full license here: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
 
 ---
 
 ## 🧑‍💻 Author
 
-Developed by [**X Software**](https://xsoftware.es)
+Developed by [**X Software**](https://xsoftware.es).  
 Linux software development, web solutions, and system automation.
